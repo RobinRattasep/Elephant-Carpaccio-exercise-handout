@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8" />
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<fieldset class="group">
+    <legend>Purchase</legend>
+    Quantity <input type="quantity" id="quantity" name="quantity"><br>
+    Summa <input type="summa" id="summa" name="summa"><br>
+    <form>
+        <label for="region">Choose your region:</label>
+        <select name="region" id="region">
+            <option value="6.85">UT</option>
+            <option value="8">NV</option>
+            <option value="6.25">TX</option>
+            <option value="4">AL</option>
+            <option value="8.25">CA</option>
+        </select>
+        <br><br>
+    </form>
+    <div>
+        <input type="submit" onclick="myFunction()">
+    </div>
+</fieldset>
+Soodustus mille said:<p id="soodustus"></p>
+Summa enne soodustusi ja makse:<p id="eelsumma"></p>
+Soodustus ühe toote kohta:<p id="demo"></p>
+Summa ühe toote kohta peale makse:<p id="maksud"></p>
+Kokku:<p id="kokku"></p>
+
+
+</body>
+<script src="index.js"></script>
+</html>
