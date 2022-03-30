@@ -31,9 +31,9 @@ function myFunction() {
    }
    document.getElementById("eelsumma").innerHTML = x*kokku;
    document.getElementById("soodustus").innerHTML = soodustus;
-   document.getElementById("demo").innerHTML = y;
-   document.getElementById("maksud").innerHTML = Math.round((y+(maks*y)/100)*100)/100;
-   document.getElementById("kokku").innerHTML = Math.round(kokku*(y+(maks*y)/100));
+   document.getElementById("demo").innerHTML = x-y;
+   document.getElementById("maksud").innerHTML = Math.round(y+((maks*y)/100));
+   document.getElementById("kokku").innerHTML = Math.round(kokku*y+((maks*y)/100));
 }
 
 app.listen(3000, function () {
